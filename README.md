@@ -1,0 +1,1 @@
+This script is analyzing the return value distribution of a function without parameters.

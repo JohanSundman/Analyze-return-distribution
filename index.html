@@ -1,0 +1,21 @@
+<!doctype html>
+<head>
+	<title>Analyze return distribution</title>
+</head>
+<body>
+	<h1>Analyze return distribution of functions</h1>
+	<p>The result is visible in the console. I'm too lazy to get it to write to the page.</p>
+	<script src="analyze.js"></script>
+	<script>
+		// The function to analyze
+		function example(){
+			// All of the below are valid
+			//return (Math.random() < 0.5);
+			//return Math.random() < 0.3?"Hey":"no";
+			return Math.floor(Math.random()*10)+1;
+		}
+		
+		// This is really self explanatory
+		analyze(example, Math.pow(10, 7));
+	</script>
+</body>
